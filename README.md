@@ -3,7 +3,7 @@ Pong (Modified) - Made with Processing
 
 
 
-##If you are having trouble with "Unidentified Developer," here's a trick.
+## If you are having trouble with "Unidentified Developer," here's a trick.
 
 1. Make a folder named Pong
 2. Right click on Pong.app and Show Package Contents
