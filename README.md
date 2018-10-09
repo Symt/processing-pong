@@ -10,3 +10,8 @@ Pong (Modified) - Made with Processing
 3. Copy "Contents" folder to the new folder named Pong
 4. Delete Pong.app
 5. Rename Pong to Pong.app
+
+
+## The Game
+
+![Pong Gif](https://media.giphy.com/media/7NV06VbgzeCLEOrwWn/giphy.gif)
