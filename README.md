@@ -1,5 +1,5 @@
 # processing-pong
-Pong (Modified) - Made with Processing
+Gravity Pong - Made with Processing
 
 
 
@@ -15,3 +15,19 @@ Pong (Modified) - Made with Processing
 ## The Game
 
 ![Pong Gif](https://media.giphy.com/media/7NV06VbgzeCLEOrwWn/giphy.gif)
+
+
+## Controls
+
+1. ESCAPE 
+      - If you are in a game, escape pauses it. 
+      - If you are already paused, the game hasn't started, or the game is over: Exits the application
+2. Mouse
+      - Starts a new game if the game is finished
+      - Controls the player's paddle
+      
+
+
+### Win condition
+
+Note: There is a way to win, but it takes time...
