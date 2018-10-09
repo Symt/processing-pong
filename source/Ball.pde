@@ -19,7 +19,7 @@ class Ball {
     this.main = main;
     this.a = a;
   }
-  
+
   void draw() {
     fill(c[0], c[1], c[2]);
     ellipse(x, y, r, r);    
@@ -32,23 +32,28 @@ class Ball {
       jumps++;
       totalJumps++;
     }
-    
+
+    if (y < 0) {
+      y = 0;
+      yv *= -1;
+    }
+
     if (x < 0) {
-      xv *= -1;
+      main.updateState("win");
     } else if (x > width) {
-      main.updateState();
+      main.updateState("lose");
     }
     if (circleRect(x, y, r, p.x, p.y-p.h/2, p.w, p.h) || circleRect(x, y, r, a.x, a.y-a.h/2, a.w, a.h)) {
       xv *= -1;
     }
-    
+
     if (jumps >= 5) {
-       jumps = 0;
-       xv+=2;
-       y *= 1.1;
+      jumps = 0;
+      xv+=2;
+      y *= 1.1;
     }
   }
-  
+
   boolean circleRect(float cx, float cy, float rad, float rx, float ry, float rw, float rh) {
     float testX = cx;
     float testY = cy;
@@ -66,5 +71,4 @@ class Ball {
     }
     return false;
   }
-  
 }
