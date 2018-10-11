@@ -102,6 +102,7 @@ void reset() {
   ball.yv = 0;
   ball.xv = 10;
   paused = false;
+  ball.xv *= random(0.8, 1.2);
 }
 
 boolean overRect(int x, int y, int w, int h) {

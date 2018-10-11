@@ -18,6 +18,7 @@ class Ball {
     this.p = p;
     this.main = main;
     this.a = a;
+    xv *= random(0.8, 1.2);
   }
 
   void draw() {
@@ -50,7 +51,7 @@ class Ball {
     if (jumps >= 5) {
       jumps = 0;
       xv+=2;
-      y *= 1.1;
+      y *= random(1.1, 1.5);
     }
   }
 
